@@ -4,6 +4,152 @@
     box-sizing: border-box;
 }
 
+.containerNavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(10, 10, 10);
+    padding: 1rem;
+  }
+  .containerNavbar .containerLogoNavbar {
+    width: 64px;
+    height: 64px;
+  }
+  .containerNavbar .containerListNavbar {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    width: 90%;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  .containerNavbar .containerListNavbar .listNavbar {
+    display: none;
+    position: relative;
+  }
+  .containerNavbar .containerListNavbar .listNavbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+    text-shadow: 0 1px 1px rgba(0, 71, 26, 0.2470588235);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-transform: uppercase;
+  }
+  .containerNavbar .containerListNavbar .listNavbar a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -7px;
+    left: 0;
+    background-color: transparent;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  .containerNavbar .containerListNavbar .listNavbar a:hover {
+    color: rgb(83, 92, 145);
+  }
+  .containerNavbar .containerListNavbar .listNavbar a:hover::after {
+    background-color: rgb(83, 92, 145);
+    transform: scaleX(1);
+  }
+  .containerNavbar .containerListNavbar .buttonToggleMenu {
+    width: 64px;
+    height: 64px;
+    z-index: 9999;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem 1rem 1.2rem 1rem;
+  }
+  .containerNavbar .containerListNavbar .buttonToggleMenu .containerLines {
+    width: 35px;
+    height: 30px;
+    position: fixed;
+  }
+  .containerNavbar .containerListNavbar .buttonToggleMenu .lineone, .containerNavbar .containerListNavbar .buttonToggleMenu .linetwo, .containerNavbar .containerListNavbar .buttonToggleMenu .linethree {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    transition: 0.5s;
+  }
+  .containerNavbar .containerListNavbar .buttonToggleMenu .linetwo {
+    top: 50%;
+  }
+  .containerNavbar .containerListNavbar .buttonToggleMenu .linethree {
+    top: 100%;
+  }
+  
+  .elMenuHamburguesa {
+    background-color: rgb(20, 20, 20);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -524px;
+    transition: 0.5s;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 100px 1rem 3rem 2rem;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    max-width: 320px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+  }
+  .elMenuHamburguesa .containerListMenuHamburguesa {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    list-style-type: none;
+  }
+  .elMenuHamburguesa .containerListMenuHamburguesa li {
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .elMenuHamburguesa .containerListMenuHamburguesa li a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+  }
+  .elMenuHamburguesa .containerListMenuHamburguesa li a:hover {
+    color: rgb(83, 92, 145);
+  }
+  
+  .opened {
+    right: 0;
+  }
+  
+  /*esto es un media querie solo del NAVBAR*/
+  @media only screen and (min-width: 1024px) and (max-width: 1920px) {
+    .containerNavbar {
+      justify-content: space-around;
+    }
+    .containerNavbar .containerListNavbar {
+      justify-content: space-around;
+    }
+    .containerNavbar .containerListNavbar .listNavbar {
+      display: block;
+      position: relative;
+    }
+    .containerNavbar .containerListNavbar .buttonToggleMenu {
+      display: none;
+    }
+    .elMenuHamburguesa {
+      display: none;
+    }
+  }
+
 .backgroundImgPrincipal{
     background-image: url(./img/fazly-shah-Ei5d39YRrgY-unsplash.jpg);
     background-size: cover;
