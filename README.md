@@ -7,4 +7,4 @@
 
 ## 🧐 About <a name = "about"></a>
 This is a course from Codo a Codo about Full Stack with Node.js. The project is about creating a self-manageable Ecommerce website.
-Comision 24140
+* Comision 24140
