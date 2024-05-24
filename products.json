@@ -1,0 +1,39 @@
+[
+    {
+        "name": "Procesador AMD Ryzen 9 5950X 4.9GHz Turbo AM4 - No incluye Cooler",
+        "image": "img/compragamer_Imganen_general_22302_Procesador_AMD_Ryzen_9_5950X_4.9GHz_Turbo_AM4_-_No_incluye_Cooler_9d34d3b3-grn.jpg",
+        "oldPrice": "$500.000",
+        "newPrice": "$399.999"
+    },
+    {
+        "name": "Placa de Video XFX Radeon RX 6650 XT 8GB GDDR6 Speedster SWFT 210",
+        "image": "img/compragamer_Imganen_general_33401_Placa_de_Video_XFX_Radeon_RX_6650_XT_8GB_GDDR6_Speedster_SWFT_210_589f396b-grn.jpg",
+        "oldPrice": "$120.000",
+        "newPrice": "$89.990"
+    },
+    {
+        "name": "Procesador Intel Core i5 14400F 4.7GHz Turbo Socket 1700 Raptor Lake",
+        "image": "img/compragamer_Imganen_general_38616_Procesador_Intel_Core_i5_14400F_4.7GHz_Turbo_Socket_1700_Raptor_Lake_b51753f7-grn.jpg",
+        "oldPrice": "$80.000",
+        "newPrice": "$59.990"
+    },
+    {
+        "name": "Memoria Team DDR5 64GB (2x32GB) 6000Mhz T-CREATE EXPERT CL34 Black Intel XMP 3.0 / AMD EXPO ",
+        "image": "img/compragamer_Imganen_general_38660_Memoria_Team_DDR5_64GB__2x32GB__6000Mhz_T-CREATE_EXPERT_CL34_Black_Intel_XMP_3.0___AMD_EXPO_14443ee4-grn.jpg",
+        "oldPrice": "$80.000",
+        "newPrice": "$59.990"
+    },
+    {
+        "name": "Memoria Team DDR4 16GB (2x8GB) 3200MHz Night Hawk RGB Black CL16 RGB Black",
+        "image": "img/compragamer_Imganen_general_11557_Memoria_Team_DDR4_16GB__2x8GB__3200MHz_Night_Hawk_RGB_Black_CL16_RGB_Black_f04f26c3-grn.jpg",
+        "oldPrice": "$ 62.300",
+        "newPrice": "$59.990"
+    },
+    {
+        "name": "Fuente Cougar 750W 80 Plus Gold GEC750",
+        "image": "img/compragamer_Imganen_general_39112_Fuente_Cougar_750W_80_Plus_Gold_GEC750_1d2f2d18-grn.jpg",
+        "oldPrice": "$ 122.300",
+        "newPrice": "$119.990"
+    }
+
+]
