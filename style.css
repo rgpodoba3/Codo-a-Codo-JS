@@ -256,13 +256,13 @@
     border-radius: 0.5rem;
     width: 256px;
     height: 256px;
-    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     transition: 0.2s;
     cursor: pointer;
 }
 
 .novedades .containerCardsProduct .cardProduct:hover {
-    box-shadow: 0px 0px 4px 0 rgb(83, 92, 145);
+    box-shadow: 0 0 4px 0 rgb(83, 92, 145);
 }
 
 
@@ -605,7 +605,6 @@
     font-size: 1rem;
     display: contents;
     white-space: inherit;
-    font-size: 16px;
     font-family: "Roboto", sans-serif;
 }
 
