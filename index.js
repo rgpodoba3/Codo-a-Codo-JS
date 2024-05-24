@@ -21,3 +21,46 @@ buttonToggleMenu.addEventListener('click', () =>{
         linethree.style.transform = 'rotate(0)'
     }
 })
+
+const productContainer = document.querySelector('.containerCardsProduct');
+
+async function getProducts() {
+    try {
+        const response = await fetch('https://codo-a-codo-js.vercel.app/products.json');
+        const products = await response.json();
+
+        for (let product of products) {
+            const cardProduct = document.createElement('div');
+            cardProduct.classList.add('cardProduct');
+
+            const cardInfo = document.createElement('div');
+            cardInfo.classList.add('cardInfo');
+
+            const image = document.createElement('img');
+            image.src = product.image;
+            image.alt = product.name;
+
+            const oldPrice = document.createElement('span');
+            oldPrice.classList.add('oldPrice');
+            oldPrice.textContent = product.oldPrice;
+
+            const newPrice = document.createElement('span');
+            newPrice.classList.add('newPrice');
+            newPrice.textContent = product.newPrice;
+
+            cardInfo.appendChild(image);
+            cardInfo.appendChild(oldPrice);
+            cardInfo.appendChild(newPrice);
+
+            cardProduct.appendChild(cardInfo);
+
+            productContainer.appendChild(cardProduct);
+        }
+    } catch (error) {
+        console.error('Error al cargar los productos:', error);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    getProducts();
+});
