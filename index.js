@@ -134,7 +134,7 @@ function showError(input, message) {
         group.appendChild(errorSpan);
     }
 
-    errorSpan.textContent = message; // Actualizar el mensaje de error
+    errorSpan.textContent = message;
 }
 
 function clearError(input) {
